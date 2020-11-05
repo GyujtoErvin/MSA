@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item1"
+        android:title="Museums"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Opera"
+        android:title="Opera"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Center"
+        android:title="City Center"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/logout"
+        android:title="Log Out"
+        app:showAsAction="never" />
+</menu>
