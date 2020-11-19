@@ -18,6 +18,7 @@ public class MainPage extends AppCompatActivity {
         setContentView(R.layout.activity_main_page1);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
     }
 
     @Override
@@ -29,8 +30,7 @@ public class MainPage extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.Museums:
+        switch (item.getItemId()) {            case R.id.Museums:
                 Intent intent1 = new Intent(MainPage.this, Museums.class);
                 startActivity(intent1);
                 break;
