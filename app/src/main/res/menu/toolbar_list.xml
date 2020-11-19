@@ -2,15 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/item1"
+        android:id="@+id/Museums"
         android:title="Museums"
         app:showAsAction="never" />
     <item
-        android:id="@+id/Opera"
-        android:title="Opera"
+        android:id="@+id/Theatres"
+        android:title="Theatres"
         app:showAsAction="never" />
     <item
-        android:id="@+id/Center"
+        android:id="@+id/Churches"
+        android:title="Churches"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/City_Center"
         android:title="City Center"
         app:showAsAction="never" />
     <item

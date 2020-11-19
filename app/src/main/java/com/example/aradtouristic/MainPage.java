@@ -5,6 +5,8 @@ package com.example.aradtouristic;
         import android.view.Menu;
         import android.view.MenuInflater;
         import android.view.MenuItem;
+        import android.view.View;
+        import android.widget.Button;
 
         import androidx.appcompat.widget.Toolbar;
         import androidx.appcompat.app.AppCompatActivity;
@@ -15,8 +17,9 @@ public class MainPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_page1);
         Toolbar toolbar = findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
+        setSupportActionBar(toolbar);
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -27,6 +30,22 @@ public class MainPage extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.Museums:
+                Intent intent1 = new Intent(MainPage.this, Museums.class);
+                startActivity(intent1);
+                break;
+            case R.id.Theatres:
+                Intent intent2 = new Intent(MainPage.this, Theatres.class);
+                startActivity(intent2);
+                break;
+            case R.id.Churches:
+                Intent intent3 = new Intent(MainPage.this, Churches.class);
+                startActivity(intent3);
+                break;
+            case R.id.City_Center:
+                Intent intent4 = new Intent(MainPage.this, City_Center.class);
+                startActivity(intent4);
+                break;
             case R.id.logout:
                 Intent intent = new Intent(MainPage.this, MainActivity.class);
                 startActivity(intent);

@@ -34,7 +34,6 @@
         tools:ignore="RtlCompat"
         android:textColor="@color/white"
         android:background="#A000">
-
     </TextView>
 
 </RelativeLayout>
