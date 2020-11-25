@@ -3,10 +3,8 @@ package com.example.aradtouristic;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -25,29 +23,21 @@ public class MainActivity extends Activity  {
         setContentView(R.layout.activity_main);
 
         button1 = (Button)findViewById(R.id.button);
+        button2 = (Button)findViewById(R.id.button2);
+
         ed1 = (EditText)findViewById(R.id.editText);
         ed2 = (EditText)findViewById(R.id.editText2);
 
-        button2 = (Button)findViewById(R.id.button2);
-        tx1 = (TextView)findViewById(R.id.textView3);
-        tx1.setVisibility(View.GONE);
 
-        button2.setOnClickListener(new View.OnClickListener() {
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(ed1.getText().toString().equals("admin") &&
                         ed2.getText().toString().equals("admin")) {
+                    Intent intent = new Intent(MainActivity.this, MainPage.class);
+                    startActivity(intent);
                 }else{
                     Toast.makeText(getApplicationContext(), "Wrong Password",Toast.LENGTH_SHORT).show();
-
-                            tx1.setVisibility(View.VISIBLE);
-                    tx1.setBackgroundColor(Color.RED);
-                    counter--;
-                    tx1.setText(Integer.toString(counter));
-
-                    if (counter == 0) {
-                        button1.setEnabled(false);
-                    }
                 }
             }
         });
@@ -58,17 +48,5 @@ public class MainActivity extends Activity  {
                 finish();
             }
         });
-
-        Button next_Activity_button = (Button)findViewById(R.id.button);
-        next_Activity_button.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v)
-            {
-                Intent intent = new Intent(MainActivity.this, MainPage.class);
-                startActivity(intent);
-            }
-        });
     }
-
-
 }

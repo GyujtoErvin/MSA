@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AradTouristic</string>
+    <string name="map_key" translatable="false">AIzaSyC48WeEO0owToHCZkjQVhRvFK4ilK9Fe4g</string>
 </resources>

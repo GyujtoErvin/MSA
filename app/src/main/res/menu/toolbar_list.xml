@@ -18,6 +18,10 @@
         android:title="City Center"
         app:showAsAction="never" />
     <item
+        android:id="@+id/Location"
+        android:title="My Location"
+        app:showAsAction="never" />
+    <item
         android:id="@+id/logout"
         android:title="Log Out"
         app:showAsAction="never" />

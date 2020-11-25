@@ -1,15 +1,13 @@
 package com.example.aradtouristic;
 
         import android.content.Intent;
-        import android.os.Bundle;
-        import android.view.Menu;
-        import android.view.MenuInflater;
-        import android.view.MenuItem;
-        import android.view.View;
-        import android.widget.Button;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
-        import androidx.appcompat.widget.Toolbar;
-        import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class MainPage extends AppCompatActivity {
     @Override
@@ -30,7 +28,8 @@ public class MainPage extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {            case R.id.Museums:
+        switch (item.getItemId()) {
+            case R.id.Museums:
                 Intent intent1 = new Intent(MainPage.this, Museums.class);
                 startActivity(intent1);
                 break;
@@ -45,6 +44,10 @@ public class MainPage extends AppCompatActivity {
             case R.id.City_Center:
                 Intent intent4 = new Intent(MainPage.this, City_Center.class);
                 startActivity(intent4);
+                break;
+            case R.id.Location:
+                Intent intent5 = new Intent(MainPage.this, MapActivity.class);
+                startActivity(intent5);
                 break;
             case R.id.logout:
                 Intent intent = new Intent(MainPage.this, MainActivity.class);
