@@ -1,18 +1,15 @@
 package com.example.aradtouristic;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 
-import androidx.appcompat.widget.Toolbar;
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
+import androidx.appcompat.widget.Toolbar;
 
 public class Theatres extends AppCompatActivity {
 
@@ -23,6 +20,42 @@ public class Theatres extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+
+        ImageButton myButton1 = (ImageButton) findViewById(R.id.teat1);
+        myButton1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intentT1 = new Intent(Theatres.this, Theatres1.class);
+                startActivity(intentT1);
+            }
+        });
+
+        ImageButton myButton2 = (ImageButton) findViewById(R.id.teat2);
+        myButton2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intentT2 = new Intent(Theatres.this, Theatres2.class);
+                startActivity(intentT2);
+            }
+        });
+
+        ImageButton myButton3 = (ImageButton) findViewById(R.id.teat3);
+        myButton3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intentT3 = new Intent(Theatres.this, Theatres1.class);
+                startActivity(intentT3);
+            }
+        });
+
+        ImageButton myButton4 = (ImageButton) findViewById(R.id.teat4);
+        myButton4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intentT4 = new Intent(Theatres.this, Theatres1.class);
+                startActivity(intentT4);
+            }
+        });
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

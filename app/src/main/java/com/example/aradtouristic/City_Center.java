@@ -1,13 +1,15 @@
 package com.example.aradtouristic;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class City_Center extends AppCompatActivity {
 
@@ -19,6 +21,41 @@ public class City_Center extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
+        ImageButton myButton1 = (ImageButton) findViewById(R.id.cc1);
+        myButton1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intentCC1 = new Intent(City_Center.this, City_Center1.class);
+                startActivity(intentCC1);
+            }
+        });
+
+        ImageButton myButton2 = (ImageButton) findViewById(R.id.cc2);
+        myButton2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intentCC2 = new Intent(City_Center.this, City_Center2.class);
+                startActivity(intentCC2);
+            }
+        });
+
+        ImageButton myButton3 = (ImageButton) findViewById(R.id.cc3);
+        myButton3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intentCC3 = new Intent(City_Center.this, City_Center1.class);
+                startActivity(intentCC3);
+            }
+        });
+
+        ImageButton myButton4 = (ImageButton) findViewById(R.id.cc4);
+        myButton4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intentCC4 = new Intent(City_Center.this, City_Center1.class);
+                startActivity(intentCC4);
+            }
+        });
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

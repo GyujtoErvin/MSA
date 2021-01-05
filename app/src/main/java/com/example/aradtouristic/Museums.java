@@ -1,13 +1,15 @@
 package com.example.aradtouristic;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class Museums extends AppCompatActivity {
 
@@ -19,6 +21,41 @@ public class Museums extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
+        ImageButton myButton1 = (ImageButton) findViewById(R.id.mus1);
+        myButton1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intentM1 = new Intent(Museums.this, Museum1.class);
+                startActivity(intentM1);
+            }
+        });
+
+        ImageButton myButton2 = (ImageButton) findViewById(R.id.mus2);
+        myButton2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intentM2 = new Intent(Museums.this, Museum2.class);
+                startActivity(intentM2);
+            }
+        });
+
+        ImageButton myButton3 = (ImageButton) findViewById(R.id.mus3);
+        myButton3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intentM3 = new Intent(Museums.this, Museum1.class);
+                startActivity(intentM3);
+            }
+        });
+
+        ImageButton myButton4 = (ImageButton) findViewById(R.id.mus4);
+        myButton4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intentM4 = new Intent(Museums.this, Museum1.class);
+                startActivity(intentM4);
+            }
+        });
     }
 
     @Override
@@ -31,9 +68,9 @@ public class Museums extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.Museums:
-            Intent intent1 = new Intent(Museums.this, Museums.class);
-            startActivity(intent1);
-            break;
+                Intent intent1 = new Intent(Museums.this, Museums.class);
+                startActivity(intent1);
+                break;
             case R.id.Theatres:
                 Intent intent2 = new Intent(Museums.this, Theatres.class);
                 startActivity(intent2);

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="77dp"
+        android:layout_marginBottom="5mm"
+        android:fontFamily="cursive"
+        android:text="Museum 1"
+        android:textSize="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="@dimen/cardview_default_elevation"
+        />
+
+    <TextView
+        android:id="@+id/list_e_taskdesc"
+        android:layout_width="50mm"
+        android:layout_centerInParent="true"
+        android:layout_height="70mm"
+        android:layout_weight="1"
+        android:layout_gravity="fill_vertical"
+        android:autoSizeTextType="uniform"
+        android:textAlignment="center"
+        android:text="The city's multicultural heritage is owed to the fact that it has been part of the Kingdom of Hungary, the Eastern Hungarian Kingdom, the Ottoman Temeşvar Eyalet, Principality of Transylvania, Austro-Hungarian Empire, and since 1920 Romania, having had significant populations of Hungarians, Germans, Jews, Serbs, Bulgarians[7] and Roma[8] at various points in its history. During the second half of the 19th century and the beginning on the 20th century, the city has experienced rapid development. The most impressive displays of architecture that are still the popular sights of Arad today, such as the neoclassical Ioan Slavici Theater, the eclectic Administrative Palace and the neogothic Red Church, have been built in this period. "
+        tools:ignore="RtlCompat"
+        android:textColor="@color/white"
+        android:background="#A000">
+    </TextView>
+
+</RelativeLayout>

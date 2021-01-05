@@ -33,7 +33,7 @@
                 >
 
                 <ImageButton
-                    android:id="@+id/mus1"
+                    android:id="@+id/teat1"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_centerHorizontal="true"
@@ -51,7 +51,7 @@
                     android:textStyle="bold"/>
 
                 <ImageButton
-                    android:id="@+id/mus2"
+                    android:id="@+id/teat2"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -69,7 +69,7 @@
                     android:textColor="@color/black"
                     android:textStyle="bold"/>
                 <ImageButton
-                    android:id="@+id/mus3"
+                    android:id="@+id/teat3"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -87,7 +87,7 @@
                     android:textColor="@color/black"
                     android:textStyle="bold"/>
                 <ImageButton
-                    android:id="@+id/mus4"
+                    android:id="@+id/teat4"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"

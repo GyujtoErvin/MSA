@@ -2,9 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.aradtouristic">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,8 +15,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <meta-data android:name="com.google.android.geo.API_KEY"
-                    android:value="@string/map_key"/>
+        <activity android:name=".City_Center2"></activity>
+        <activity android:name=".City_Center1" />
+        <activity android:name=".Churches2" />
+        <activity android:name=".Churches1" />
+        <activity android:name=".Theatres2" />
+        <activity android:name=".Theatres1" />
+        <activity android:name=".Museum2" />
+        <activity android:name=".Museum1" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
         <activity android:name=".MapActivity" />
         <activity android:name=".City_Center" />
         <activity android:name=".Churches" />
@@ -24,6 +37,7 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

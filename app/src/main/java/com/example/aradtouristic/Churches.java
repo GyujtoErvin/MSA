@@ -1,13 +1,15 @@
 package com.example.aradtouristic;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class Churches extends AppCompatActivity {
 
@@ -19,6 +21,41 @@ public class Churches extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
+        ImageButton myButton1 = (ImageButton) findViewById(R.id.chr1);
+        myButton1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intentC1 = new Intent(Churches.this, Churches1.class);
+                startActivity(intentC1);
+            }
+        });
+
+        ImageButton myButton2 = (ImageButton) findViewById(R.id.chr2);
+        myButton2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intentC2 = new Intent(Churches.this, Churches2.class);
+                startActivity(intentC2);
+            }
+        });
+
+        ImageButton myButton3 = (ImageButton) findViewById(R.id.chr3);
+        myButton3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intentC3 = new Intent(Churches.this, Churches1.class);
+                startActivity(intentC3);
+            }
+        });
+
+        ImageButton myButton4 = (ImageButton) findViewById(R.id.chr4);
+        myButton4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intentC4 = new Intent(Churches.this, Churches1.class);
+                startActivity(intentC4);
+            }
+        });
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
