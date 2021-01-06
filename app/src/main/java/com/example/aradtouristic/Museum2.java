@@ -45,7 +45,11 @@ public class Museum2 extends AppCompatActivity {
                 Intent intent4 = new Intent(Museum2.this, City_Center.class);
                 startActivity(intent4);
                 break;
-            case R.id.logout:
+            case R.id.Location:
+                Intent intent5 = new Intent(Museum2.this, MapActivity.class);
+                startActivity(intent5);
+                break;
+            case R.id.exit:
                 Intent intent = new Intent(Museum2.this, MainActivity.class);
                 startActivity(intent);
                 break;

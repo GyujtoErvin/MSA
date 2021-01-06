@@ -11,10 +11,15 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class Museums extends AppCompatActivity {
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
+public class Museums extends AppCompatActivity {
+    private StorageReference mstorage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        mstorage = FirebaseStorage.getInstance().getReference().child("pictures/bis1.jpg");
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_museums);
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -43,19 +48,11 @@ public class Museums extends AppCompatActivity {
         myButton3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intentM3 = new Intent(Museums.this, Museum1.class);
+                Intent intentM3 = new Intent(Museums.this, Museum3.class);
                 startActivity(intentM3);
             }
         });
 
-        ImageButton myButton4 = (ImageButton) findViewById(R.id.mus4);
-        myButton4.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                Intent intentM4 = new Intent(Museums.this, Museum1.class);
-                startActivity(intentM4);
-            }
-        });
     }
 
     @Override
@@ -83,7 +80,11 @@ public class Museums extends AppCompatActivity {
                 Intent intent4 = new Intent(Museums.this, City_Center.class);
                 startActivity(intent4);
                 break;
-            case R.id.logout:
+            case R.id.Location:
+                Intent intent5 = new Intent(Museums.this, MapActivity.class);
+                startActivity(intent5);
+                break;
+            case R.id.exit:
                 Intent intent = new Intent(Museums.this, MainActivity.class);
                 startActivity(intent);
                 break;

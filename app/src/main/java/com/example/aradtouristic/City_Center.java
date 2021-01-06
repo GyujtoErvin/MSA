@@ -43,19 +43,11 @@ public class City_Center extends AppCompatActivity {
         myButton3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intentCC3 = new Intent(City_Center.this, City_Center1.class);
+                Intent intentCC3 = new Intent(City_Center.this, City_Center3.class);
                 startActivity(intentCC3);
             }
         });
 
-        ImageButton myButton4 = (ImageButton) findViewById(R.id.cc4);
-        myButton4.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                Intent intentCC4 = new Intent(City_Center.this, City_Center1.class);
-                startActivity(intentCC4);
-            }
-        });
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -81,7 +73,11 @@ public class City_Center extends AppCompatActivity {
                 Intent intent4 = new Intent(City_Center.this, City_Center.class);
                 startActivity(intent4);
                 break;
-            case R.id.logout:
+            case R.id.Location:
+                Intent intent5 = new Intent(City_Center.this, MapActivity.class);
+                startActivity(intent5);
+                break;
+            case R.id.exit:
                 Intent intent = new Intent(City_Center.this, MainActivity.class);
                 startActivity(intent);
                 break;

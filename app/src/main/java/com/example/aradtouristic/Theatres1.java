@@ -45,7 +45,11 @@ public class Theatres1 extends AppCompatActivity {
                 Intent intent4 = new Intent(Theatres1.this, City_Center.class);
                 startActivity(intent4);
                 break;
-            case R.id.logout:
+            case R.id.Location:
+                Intent intent5 = new Intent(Theatres1.this, MapActivity.class);
+                startActivity(intent5);
+                break;
+            case R.id.exit:
                 Intent intent = new Intent(Theatres1.this, MainActivity.class);
                 startActivity(intent);
                 break;

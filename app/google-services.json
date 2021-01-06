@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "769332875190",
+    "project_id": "aradtouristic",
+    "storage_bucket": "aradtouristic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769332875190:android:f0cf399a10871b71bcbb17",
+        "android_client_info": {
+          "package_name": "com.example.aradtouristic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769332875190-a1okhn6ki2ahevv8un874ff6s9ghgv6i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHYh1plU0svd7K9ELBNoCEu4sN5EYWh6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769332875190-a1okhn6ki2ahevv8un874ff6s9ghgv6i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

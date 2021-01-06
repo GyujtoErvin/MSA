@@ -38,19 +38,20 @@
                     android:layout_height="fill_parent"
                     android:layout_centerHorizontal="true"
                     android:background="#00000000"
-                    android:src="@drawable/bis1" />
+                    android:src="@drawable/bis3" />
                 <TextView
                     android:id="@+id/c1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textAlignment="center"
-                    android:text="Church1"
+                    android:text="The 'Holy Trinity' Cathedral"
                     android:textSize="20sp"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/black"
                     android:textStyle="bold"
                     />
                 <ImageButton
+                    android:layout_marginTop="25dp"
                     android:id="@+id/chr2"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -62,41 +63,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textAlignment="center"
-                    android:text="Church2"
+                    android:text="The Red Church"
                     android:textSize="20sp"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/black"
                     android:textStyle="bold"/>
                 <ImageButton
+                    android:layout_marginTop="25dp"
                     android:id="@+id/chr3"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:background="#00000000"
-                    android:src="@drawable/bis3" />
+                    android:src="@drawable/bis1" />
                 <TextView
                     android:id="@+id/c3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textAlignment="center"
-                    android:text="Church3"
-                    android:textSize="20sp"
-                    android:layout_gravity="center_horizontal"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"/>
-                <ImageButton
-                    android:id="@+id/chr4"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:background="#00000000"
-                    android:src="@drawable/bis4" />
-                <TextView
-                    android:id="@+id/c4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textAlignment="center"
-                    android:text="Church4"
+                    android:text="'Saint Anthony of Padua' Church"
                     android:textSize="20sp"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/black"

@@ -43,19 +43,11 @@ public class Churches extends AppCompatActivity {
         myButton3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intentC3 = new Intent(Churches.this, Churches1.class);
+                Intent intentC3 = new Intent(Churches.this, Churches3.class);
                 startActivity(intentC3);
             }
         });
 
-        ImageButton myButton4 = (ImageButton) findViewById(R.id.chr4);
-        myButton4.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                Intent intentC4 = new Intent(Churches.this, Churches1.class);
-                startActivity(intentC4);
-            }
-        });
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -81,7 +73,11 @@ public class Churches extends AppCompatActivity {
                 Intent intent4 = new Intent(Churches.this, City_Center.class);
                 startActivity(intent4);
                 break;
-            case R.id.logout:
+            case R.id.Location:
+                Intent intent5 = new Intent(Churches.this, MapActivity.class);
+                startActivity(intent5);
+                break;
+            case R.id.exit:
                 Intent intent = new Intent(Churches.this, MainActivity.class);
                 startActivity(intent);
                 break;

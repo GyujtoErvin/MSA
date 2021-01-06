@@ -19,7 +19,7 @@
         android:layout_marginTop="77dp"
         android:layout_marginBottom="5mm"
         android:fontFamily="cursive"
-        android:text="Puppet Theater"
+        android:text="The Casino"
         android:textSize="55dp"
         android:layout_centerHorizontal="true"
         android:layout_marginVertical="@dimen/cardview_default_elevation"
@@ -31,10 +31,11 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:background="#00000000"
-        android:src="@drawable/sa" />
+        android:src="@drawable/caz"
+        android:layout_marginTop="15mm"/>
 
     <TextView
-        android:layout_marginTop="850dp"
+        android:layout_marginTop="770dp"
         android:id="@+id/list_e_taskdesc"
         android:layout_width="50mm"
         android:layout_centerInParent="true"
@@ -43,8 +44,9 @@
         android:layout_gravity="fill_vertical"
         android:autoSizeTextType="uniform"
         android:textAlignment="center"
-        android:text="The first show on the stage of the Arad Puppet Theater was performed on May 7, 1951, which is linked to the appearance of the Puppet Theater in the cultural landscape of Arad. The history of Arad puppets is linked to the name of master Cristian Frangopol, the founder and first director of the Arad Puppet Theater.
-The inaugural gong resounded for the song 'The Enchanted Galos'. Names already entered in the history of puppets gave life to the characters of this show: Elena Gherdan, Olimpia Didilescu, Puica Marin, Florica Mihailescu, Maria Frangopol, Elena Atanasiu, Elena Caroviţă, Astra Lumcovschi and Elena Birta , guided by Sanda Diamandescu and Cristian Frangopol, who signed the stage direction, together with the scenographers A. Brătăşanu and A. Wilke."
+        android:text="The Arad Casino is a historical monument building located on General Dragalina Boulevard no. 27, in the municipality of Arad. The building was built in neo-baroque style and was completed in 1872.
+Over the years, the building has functioned as an exhibition hall, events and casino. After 1990 it became private property. In 2007, a restaurant and a club operated on the premises, but it did not last long and the building was abandoned. In 2017, the state of the casino was pretty bad. The walls of the building were destroyed, the windows were broken and the few pieces of furniture left were burned or destroyed by the street people who make their living there. [1]
+In September 2016, this emblematic building in Arad, consisting of land with a total area of 2,990 square meters and construction was put up for sale, following a forced execution, the price being 740,000 EUR + VAT."
         tools:ignore="RtlCompat"
         android:textColor="@color/white"
         android:background="#A000">
@@ -66,7 +68,7 @@ The inaugural gong resounded for the song 'The Enchanted Galos'. Names already e
         android:layout_gravity="fill_vertical"
         android:autoSizeTextType="uniform"
         android:textAlignment="center"
-        android:text="Location: Str. Episcopiei Nr.15, Arad "
+        android:text="Location: Bulevardul Dragalina, Nr. 27, Arad"
         tools:ignore="RtlCompat"
         android:textColor="@color/white"
         android:background="#000000"

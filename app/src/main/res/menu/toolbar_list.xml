@@ -15,14 +15,14 @@
         app:showAsAction="never" />
     <item
         android:id="@+id/City_Center"
-        android:title="City Center"
+        android:title="Monuments"
         app:showAsAction="never" />
     <item
         android:id="@+id/Location"
         android:title="My Location"
         app:showAsAction="never" />
     <item
-        android:id="@+id/logout"
-        android:title="Log Out"
+        android:id="@+id/exit"
+        android:title="Exit"
         app:showAsAction="never" />
 </menu>

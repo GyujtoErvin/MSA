@@ -43,19 +43,11 @@ public class Theatres extends AppCompatActivity {
         myButton3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intentT3 = new Intent(Theatres.this, Theatres1.class);
+                Intent intentT3 = new Intent(Theatres.this, Theatres3.class);
                 startActivity(intentT3);
             }
         });
 
-        ImageButton myButton4 = (ImageButton) findViewById(R.id.teat4);
-        myButton4.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                Intent intentT4 = new Intent(Theatres.this, Theatres1.class);
-                startActivity(intentT4);
-            }
-        });
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -81,7 +73,11 @@ public class Theatres extends AppCompatActivity {
                 Intent intent4 = new Intent(Theatres.this, City_Center.class);
                 startActivity(intent4);
                 break;
-            case R.id.logout:
+            case R.id.Location:
+                Intent intent5 = new Intent(Theatres.this, MapActivity.class);
+                startActivity(intent5);
+                break;
+            case R.id.exit:
                 Intent intent = new Intent(Theatres.this, MainActivity.class);
                 startActivity(intent);
                 break;

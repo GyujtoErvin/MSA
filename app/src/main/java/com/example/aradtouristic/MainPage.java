@@ -49,7 +49,7 @@ public class MainPage extends AppCompatActivity {
                 Intent intent5 = new Intent(MainPage.this, MapActivity.class);
                 startActivity(intent5);
                 break;
-            case R.id.logout:
+            case R.id.exit:
                 Intent intent = new Intent(MainPage.this, MainActivity.class);
                 startActivity(intent);
                 break;

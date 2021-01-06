@@ -44,66 +44,55 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textAlignment="center"
-                    android:text="Theatres1"
+                    android:text="Ioan Slavici Theater"
                     android:textSize="20sp"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/black"
                     android:textStyle="bold"/>
 
                 <ImageButton
+                    android:layout_marginTop="25dp"
                     android:id="@+id/teat2"
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="200dp"
                     android:layout_centerHorizontal="true"
                     android:background="#00000000"
-                    android:src="@drawable/teat1"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/sa"
                     />
                 <TextView
                     android:id="@+id/t2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textAlignment="center"
-                    android:text="Theatres2"
+                    android:text="Puppet Theater"
                     android:textSize="20sp"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/black"
                     android:textStyle="bold"/>
                 <ImageButton
+                    android:layout_marginTop="25dp"
                     android:id="@+id/teat3"
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="250dp"
                     android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
                     android:background="#00000000"
-                    android:src="@drawable/teat1"
+                    android:src="@drawable/tt"
                     />
                 <TextView
                     android:id="@+id/t3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textAlignment="center"
-                    android:text="Theatres3"
+                    android:text="Summer Theatre"
                     android:textSize="20sp"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/black"
                     android:textStyle="bold"/>
-                <ImageButton
-                    android:id="@+id/teat4"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:background="#00000000"
-                    android:src="@drawable/teat1"
-                    />
-                <TextView
-                    android:id="@+id/t4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textAlignment="center"
-                    android:text="Theatres4"
-                    android:textSize="20sp"
-                    android:layout_gravity="center_horizontal"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"/>
+
             </TableLayout>
         </ScrollView>
     </LinearLayout>

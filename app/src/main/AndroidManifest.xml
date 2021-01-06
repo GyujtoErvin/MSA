@@ -15,7 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".City_Center2"></activity>
+        <activity android:name=".City_Center3" />
+        <activity android:name=".Churches3" />
+        <activity android:name=".Theatres3" />
+        <activity android:name=".Museum3" />
+        <activity android:name=".City_Center2" />
         <activity android:name=".City_Center1" />
         <activity android:name=".Churches2" />
         <activity android:name=".Churches1" />

@@ -14,7 +14,7 @@
         android:layout_height="82dp"
         android:fontFamily="cursive"
         android:layout_centerHorizontal="true"
-        android:text="City Center"
+        android:text="Monuments"
         android:textSize="55dp"/>
     <LinearLayout
         android:layout_marginTop="150dp"
@@ -33,68 +33,54 @@
 
                 <ImageButton
                     android:id="@+id/cc1"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:layout_centerHorizontal="true"
+                    android:layout_width="20mm"
+                    android:layout_height="30mm"
+                    android:layout_marginLeft="5mm"
+                    android:layout_marginRight="5mm"
                     android:background="#00000000"
-                    android:src="@drawable/cen1" />
+                    android:src="@drawable/cet" />
                 <TextView
                     android:id="@+id/ce1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textAlignment="center"
-                    android:text="Center1"
+                    android:text="The Arad Fortress"
                     android:textSize="20sp"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/black"
                     android:textStyle="bold"/>
                 <ImageButton
+                    android:layout_marginTop="25dp"
                     android:id="@+id/cc2"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:background="#00000000"
-                    android:src="@drawable/cen2" />
+                    android:src="@drawable/aa2" />
                 <TextView
                     android:id="@+id/ce2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textAlignment="center"
-                    android:text="Center2"
+                    android:text="The padlocked house"
                     android:textSize="20sp"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/black"
                     android:textStyle="bold"/>
                 <ImageButton
+                    android:layout_marginTop="25dp"
                     android:id="@+id/cc3"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:background="#00000000"
-                    android:src="@drawable/cen3" />
+                    android:src="@drawable/caz" />
                 <TextView
                     android:id="@+id/ce3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textAlignment="center"
-                    android:text="Center3"
-                    android:textSize="20sp"
-                    android:layout_gravity="center_horizontal"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"/>
-                <ImageButton
-                    android:id="@+id/cc4"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:background="#00000000"
-                    android:src="@drawable/cen4" />
-                <TextView
-                    android:id="@+id/ce4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textAlignment="center"
-                    android:text="Center4"
+                    android:text="The Casino"
                     android:textSize="20sp"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/black"
